@@ -155,10 +155,11 @@ img {
 .servicesContainer {
   min-width: 320px;
 }
-.servicesContainer h2 {
+.serivicesTittle {
   font-size: 3rem;
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0 -0;
+  margin-bottom: -10px;
   font-family: var(--font-tittle);
   color: var(--dark-grey);
 }
