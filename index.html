@@ -9,6 +9,13 @@
       src="https://kit.fontawesome.com/83ef059c2f.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
     <title>CargoTruck</title>
   </head>
   <body>
@@ -18,12 +25,13 @@
           <img src="./assets/icon/logo.svg" class="brand" alt="Logo" />
         </section>
         <section class="navContainer">
-          <label for="navButton">
+          <input type="checkbox" class="navButton" id="navButton" />
+          <label for="navButton" class="lblNavButton">
             <span class="span span1"></span>
             <span class="span span2"></span>
             <span class="span span3"></span>
           </label>
-          <input type="checkbox" class="navButton" id="navButton" />
+
           <nav class="nav">
             <ul class="containerMenu">
               <li class="navItem"><a href="#" class="navLink">Home</a></li>
@@ -108,23 +116,23 @@
         <div class="carouselContent">
           <article class="imgContainer">
             <img src="./assets/icon/speed.png" alt="Icon" />
-            <p>tal cosa</p>
+            <p>Speed Monitor</p>
           </article>
           <article class="imgContainer">
             <img src="./assets/icon/biometric.png" alt="Icon" />
-            <p>tal cosa</p>
+            <p>Biometric Access</p>
           </article>
           <article class="imgContainer">
             <img src="./assets/icon/map.png" alt="Icon" />
-            <p>tal cosa</p>
+            <p>Freight Geofencing</p>
           </article>
           <article class="imgContainer">
             <img src="./assets/icon/fuel.png" alt="Icon" />
-            <p>tal cosa</p>
+            <p>Fuel Control</p>
           </article>
           <article class="imgContainer">
             <img src="./assets/icon/router.png" alt="Icon" />
-            <p>tal cosa</p>
+            <p>Router Monitor</p>
           </article>
         </div>
       </section>
@@ -256,7 +264,9 @@
     </main>
     <footer>
       <section class="brandFooter">
-        <img src="./assets/icon/logo.svg" alt="Icon" />
+        <a href="#">
+          <img src="./assets/icon/logo.svg" alt="Logo Footer" />
+        </a>
       </section>
       <section class="footerContent">
         <article class="rrssContainer">

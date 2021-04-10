@@ -5,19 +5,20 @@
 }
 :root {
   font-size: 62.5%;
-  --white: white;
+  --white: #fff;
   --light-grey: #ddd;
   --dark-grey: #4f4f4f;
   --grey: grey;
   --black: #000;
   --overlay: hsla(100, 0%, 10%, 0.5);
   --blue: rgb(27, 102, 172);
+  --red: rgb(187, 24, 24);
+  --font-tittle: "Anton", sans-serif;
 }
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
   overflow-x: hidden;
-  position: relative;
   scroll-behavior: smooth;
 }
 
@@ -58,7 +59,7 @@ img {
 }
 .nav {
   position: absolute;
-  top: 37px;
+  top: 30px;
   right: 0px;
   display: none;
 }
@@ -79,29 +80,32 @@ img {
   text-decoration: none;
   color: var(--black);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .navButton {
   display: none;
-  animation: all 1s ease-out;
 }
+
 .navButton:checked ~ .nav {
   display: block;
 }
-.navButton:checked ~ .navContainer > label > .span1 {
+.navButton:checked + .lblNavButton .span1 {
+  position: absolute;
+  top: 0;
   transform: rotate(145deg);
+  transition: all 0.5s ease-out;
 }
-.navButton:checked ~ .navContainer label .span2 {
+.navButton:checked + .lblNavButton .span2 {
   display: none;
+  transition: all 0.5s ease-out;
 }
-.navButton:checked ~ .navContainer label .span3 {
+.navButton:checked + .lblNavButton .span3 {
   transform: rotate(-145deg);
+  transition: all 0.5s ease-out;
 }
-*/
-
 /*main*/
 .main {
-  padding-top: 60px;
+  padding: 60px 0 0 0;
 }
 /*Banner*/
 .bannerContainer {
@@ -132,7 +136,8 @@ img {
   font-size: 2rem;
 }
 .bannerContent h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-family: var(--font-tittle);
 }
 .bannerContent p {
   font-size: 1.8rem;
@@ -169,10 +174,10 @@ img {
   font-size: 2rem;
   margin: 20px 0 10px;
   color: var(--dark-grey);
+  font-family: var(--font-tittle);
 }
 .service h4 {
   margin-bottom: 10px;
-
   font-size: 1.1rem;
   text-align: left;
 }
@@ -192,8 +197,15 @@ img {
   scroll-snap-type: x proximity;
 }
 .imgContainer {
+  text-align: center;
   scroll-snap-align: center;
   margin: 20px 35px;
+}
+
+.imgContainer p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 /*why us*/
@@ -203,10 +215,10 @@ img {
   padding: 20px 0;
 }
 .whyUsContainer h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 20px 0;
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-tittle);
 }
 .whyUsContainer article {
   padding: 10px 0;
@@ -249,12 +261,12 @@ img {
   margin: 0 auto;
 }
 .formContainer h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   width: 300px;
   text-align: center;
   padding: 20px 0;
   color: var(--dark-grey);
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-tittle);
 }
 .formContainer h4 {
   font-size: 1.5rem;
@@ -291,18 +303,18 @@ img {
 }
 /*faqs*/
 .faqsContainer {
-  background-image: linear-gradient(to bottom, rgb(187, 24, 24) 50%, white);
+  background-image: linear-gradient(to bottom, var(--red) 50%, var(--white));
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 .faqsContainer h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 20px 0;
   color: var(--white);
-  font-family: "Anton", sans-serif;
+  font-family: var(--font-tittle);
 }
 .faq {
   color: var(--white);
@@ -384,5 +396,6 @@ footer {
 }
 .mailFooter p,
 .addressFooter p {
-  margin: 10px 0;
+  margin: 20px 0;
+  font-size: 1.6rem;
 }
