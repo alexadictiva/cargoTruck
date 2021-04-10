@@ -154,6 +154,15 @@ img {
 /*services*/
 .servicesContainer {
   min-width: 320px;
+}
+.servicesContainer h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  font-family: var(--font-tittle);
+  color: var(--dark-grey);
+}
+.servicesContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,6 +383,9 @@ footer {
   width: 20%;
   margin: 20px auto;
 }
+.brandFooter a img {
+  width: 100%;
+}
 .footerContent {
   text-align: center;
   margin-bottom: 15px;
@@ -398,4 +410,47 @@ footer {
 .addressFooter p {
   margin: 20px 0;
   font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  .whyUsContainer {
+    padding: 50px 0;
+  }
+  .whyUsContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .whyUsContent article {
+    width: 380px;
+  }
+  .faqsContent {
+    width: 460px;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .navContainer label {
+    display: none;
+  }
+  .nav {
+    display: block;
+    position: static;
+  }
+  .containerMenu {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .whyUsContent article {
+    margin: 50px 0 0;
+  }
+  .servicesContent {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+  .service {
+    width: 30%;
+  }
 }
