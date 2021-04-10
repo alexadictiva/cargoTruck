@@ -18,6 +18,7 @@ body {
   position: relative;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -30,6 +31,7 @@ img {
   height: 60px;
   position: fixed;
   background-color: var(--light-grey);
+  z-index: 10;
 }
 .headerContent {
   display: flex;
@@ -63,7 +65,7 @@ img {
 .containerMenu {
   list-style: none;
   padding: 0;
-  line-height: 2.5rem;
+  line-height: 5rem;
   width: 50vw;
   height: 100vh;
   background-color: var(--light-grey);
@@ -289,7 +291,7 @@ img {
 }
 /*faqs*/
 .faqsContainer {
-  background-image: linear-gradient(to bottom, red 50%, white);
+  background-image: linear-gradient(to bottom, rgb(187, 24, 24) 50%, white);
   display: flex;
   flex-direction: column;
   justify-content: center;
