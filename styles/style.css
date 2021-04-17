@@ -206,6 +206,20 @@ img {
   overflow-x: scroll;
   scroll-snap-type: x proximity;
 }
+
+.carouselContent::-webkit-scrollbar {
+  height: 5px;
+}
+.carouselContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--light-grey);
+}
+
+.carouselContent::-webkit-scrollbar-thumb {
+  background-color: var(--dark-grey);
+  outline: none;
+  border-radius: 10px;
+}
+
 .imgContainer {
   text-align: center;
   scroll-snap-align: center;
@@ -413,6 +427,9 @@ footer {
   font-size: 1.6rem;
 }
 @media (min-width: 768px) {
+  .carouselContent {
+    overflow-x: hidden;
+  }
   .whyUsContainer {
     padding: 50px 0;
   }
@@ -446,6 +463,9 @@ footer {
   .whyUsContent article {
     margin: 50px 0 0;
   }
+  .carouselContent {
+    justify-content: center;
+  }
   .servicesContent {
     flex-direction: row;
     align-items: baseline;
@@ -453,5 +473,22 @@ footer {
   }
   .service {
     width: 30%;
+    height: 400px;
+  }
+  .service3 {
+    overflow-y: scroll;
+  }
+  .service3::-webkit-scrollbar {
+    width: 10px;
+  }
+  .service3::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px var(--light-grey);
+    border-bottom-right-radius: 10px;
+  }
+
+  .service3::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey);
+    outline: none;
+    border-radius: 10px;
   }
 }
