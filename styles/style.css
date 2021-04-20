@@ -170,21 +170,28 @@ img {
 }
 .service {
   width: 70%;
-  padding: 20px;
+  color: var(--white);
   text-align: center;
-  margin: 50px 0 0;
+  margin: 30px 0 0;
   background: var(--light-grey);
   box-shadow: 0 4px 8px grey;
   border-radius: 10px;
 }
-.service img {
+.service div {
+  padding: 20px;
+  width: 100%;
+  height: 150%;
+  background: var(--overlay);
+  border-radius: 10px;
+}
+.service div img {
   width: 25%;
 }
-.service h2 {
+.service div h2 {
   font-size: 2rem;
   margin: 20px 0 10px;
-  color: var(--dark-grey);
   font-family: var(--font-tittle);
+  text-shadow: 2px 2px 4px black;
 }
 .service h4 {
   margin-bottom: 10px;
@@ -196,6 +203,25 @@ img {
   line-height: 2rem;
   font-size: 1.4rem;
   margin: 15px 0;
+}
+.service1 {
+  background-image: url("https://besthqwallpapers.com/Uploads/20-5-2020/133868/thumb2-man-tgx-2020-red-lion-500-edition-red-truck-new-red-tgx.jpg");
+  overflow-y: hidden;
+}
+.service2 {
+  background-image: url("https://redclassic.com/wp-content/uploads/2019/08/truck-duo-e1566572874431.jpg");
+  overflow-y: hidden;
+}
+.service3 {
+  background-image: url("https://cdllife.com/wp-content/uploads/2018/05/Red-Classic-Introduces-Comprehensive-Enhancement-To-Driver-Benefit-Package.png");
+}
+.service1,
+.service2,
+.service3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*mini carousel*/
 .miniCarousel {
@@ -327,19 +353,31 @@ img {
 }
 /*faqs*/
 .faqsContainer {
-  background-image: linear-gradient(to bottom, var(--red) 50%, var(--white));
+  background-image: url("https://www.macktrucks.com/-/media/images/article-media/red-classic.jpg?h=738&w=1492&hash=E59EDB2FC64F725303A87F307220AC345DFDEF46");
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.faqsContainer .faqsPalarax {
+  /* background-image: linear-gradient(to bottom, var(--red) 50%, var(--white)); */
+  background: var(--overlay);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
-.faqsContainer h2 {
+
+.faqsContainer .faqsPalarax h2 {
   font-size: 3rem;
   text-align: center;
   padding: 20px 0;
   color: var(--white);
   font-family: var(--font-tittle);
+  text-shadow: 2px 2px 4px black;
 }
+
 .faq {
   color: var(--white);
   display: flex;
@@ -475,6 +513,10 @@ footer {
     width: 30%;
     height: 400px;
   }
+  .service1 {
+    background-position: 120% center;
+    background-image: url("https://wallpaperaccess.com/full/3594622.jpg");
+  }
   .service3 {
     overflow-y: scroll;
   }
@@ -482,12 +524,12 @@ footer {
     width: 10px;
   }
   .service3::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px var(--light-grey);
+    box-shadow: inset 0 0 6px var(--overlay);
     border-bottom-right-radius: 10px;
   }
 
   .service3::-webkit-scrollbar-thumb {
-    background-color: var(--dark-grey);
+    background-color: var(--white);
     outline: none;
     border-radius: 10px;
   }
