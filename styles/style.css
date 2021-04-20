@@ -186,6 +186,8 @@ img {
 }
 .service div img {
   width: 25%;
+  box-shadow: 2px 2px 4px var(--white);
+  border-radius: 50%;
 }
 .service div h2 {
   font-size: 2rem;
