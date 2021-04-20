@@ -190,20 +190,20 @@ img {
   border-radius: 50%;
 }
 .service div h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 20px 0 10px;
   font-family: var(--font-tittle);
   text-shadow: 2px 2px 4px black;
 }
 .service h4 {
   margin-bottom: 10px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 .service p {
   text-align: left;
-  line-height: 2rem;
-  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-size: 1.6rem;
   margin: 15px 0;
 }
 .service1 {
