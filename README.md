@@ -1,4 +1,3 @@
-# job5 Project
 
 ## What is CargoTruck ?
 
